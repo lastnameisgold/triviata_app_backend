@@ -5,8 +5,15 @@ Backend repo for Triviata app
 Triviata is a quiz and flashcard platform that allows users to create and utilize quizzes and flashcards made by others.
 
 ## The team
+Charlotte Fusco, Jose Reyes, Austin Holland, Fernando Dorado
 
-## Describe the app
+## Key Features
+1. Create Quizzes and Flashcards
+2. Bookmark content
+3. Search and filter
+4. Post comments
+5. Upvote content; quizzes, flashcards, and comments.
+5. Personalization: ability to create account, see stats, change dark/light theme.
 
 ## ERD
 ![Screenshot of ERD](assets/Triviata_ERD.png)

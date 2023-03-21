@@ -15,7 +15,7 @@ module.exports = {
           userId: 1
         },
         {
-          title: 'Science Quiz 1',
+          title: 'Geography Quiz 2',
           category: 'Geography',
           likes: 0,
           createdAt: new Date(),

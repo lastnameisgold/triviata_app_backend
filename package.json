@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,17 @@
   },
   "homepage": "https://github.com/lastnameisgold/triviata_app_backend#readme",
   "dependencies": {
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
+=======
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+>>>>>>> b665acb46f5cd6971ce0ed53bdad9996d78bf63a
     "pg": "^8.10.0",
     "sequelize": "^6.29.3"
   },

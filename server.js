@@ -11,12 +11,25 @@ const app = express()
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 
-app.use('/api', AppRouter)
+// app.use('/api', AppRouter)
+
+app.use('/api', (req, res, next) => {
+  console.log('Accessing the /api endpoint...')
+  next()
+}, AppRouter)
+
 app.use('/auth', AuthRouter)
+
 app.get('/', (req, res) => {
+  console.log(`Start point works...`)
   res.send('Testing that the server works...')
+})
+
+app.get('/test', (req, res) => {
+  console.log(`Test route works...`)
+  res.send(`This route works!!`)
 })
 
 app.listen(PORT, () => {

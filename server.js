@@ -2,6 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
 const AppRouter = require('./routes/AppRouter')
+const AuthRouter = require('./routes/AuthRouter')
+
 const PORT = process.env.PORT || 3001
 
 const app = express()
@@ -13,7 +15,6 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/api', AppRouter)
 app.use('/auth', AuthRouter)
-// app.use('/posts', PostRouter)
 app.get('/', (req, res) => {
   res.send('Testing that the server works...')
 })

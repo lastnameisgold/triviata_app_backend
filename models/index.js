@@ -20,7 +20,7 @@ fs
     db[model.name] = model;
   });
 
-db['User'] = User;
+// db['User'] = User;
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {

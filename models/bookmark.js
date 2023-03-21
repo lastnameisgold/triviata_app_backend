@@ -36,6 +36,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     quizId: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       onDelete: 'CASCADE',
       references: {
         model: 'quizzes',
@@ -44,6 +45,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     flashcardId: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       onDelete: 'CASCADE',
       references: {
         model: 'flashcards',

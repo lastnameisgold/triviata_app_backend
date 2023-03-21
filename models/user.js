@@ -39,7 +39,10 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     passwordDigest: DataTypes.STRING,
-    profilePicture: DataTypes.STRING
+    profilePicture: {
+      type: DataTypes.STRING,
+      allowNull: true
+    }
   }, {
     sequelize,
     modelName: 'User',

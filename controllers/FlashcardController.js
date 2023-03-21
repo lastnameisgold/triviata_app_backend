@@ -12,7 +12,8 @@ const createFlashcard = async (req, res) => {
 //R
 const getFlashcardsAll = async (req, res) => {
   try {
-
+    let result = await Flashcard.findAll()
+    res.send(result)
   } catch (error) {
     throw error
   }

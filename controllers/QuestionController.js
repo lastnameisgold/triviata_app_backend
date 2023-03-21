@@ -1,14 +1,6 @@
 const { Question } = require('../models')
 
-//test
-const testQuestion = async (req, res) => {
-  try {
-    console.log(`This route works enough.`)
-    res.send(`This route works!`)
-  } catch (error) {
-    throw error
-  }
-}
+//join quiz and question together ??
 
 //C
 const createQuestion = async (req, res) => {
@@ -22,7 +14,7 @@ const createQuestion = async (req, res) => {
 //R
 const getQuestionsAll = async (req, res) => {
   try {
-    const result = await Question.findAll()
+    let result = await Question.findAll()
     res.send(result)
   } catch (error) {
     throw error
@@ -52,5 +44,4 @@ module.exports = {
   getQuestionsAll,
   updateQuestion,
   deleteQuestion,
-  testQuestion
 }

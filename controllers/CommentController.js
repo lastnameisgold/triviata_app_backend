@@ -1,5 +1,34 @@
 const { Comment } = require('../models')
 
+//C
+const createCommentOnQuiz = async (req, res) => {
+  try {
+    let quizId = parseInt(req.params.quizId)
+    let commentBody = {
+      quizId,
+      ...req.body
+    }
+    let comment = await Comment.create(commentBody)
+    res.send(comment)
+  } catch (error) {
+    throw error
+  }
+}
+
+const createCommentOnFlashcard = async (req, res) => {
+  try {
+    let flashcardId = parseInt(req.params.flashcardId)
+    let commentBody = {
+      flashcardId,
+      ...req.body
+    }
+    let comment = await Comment.create(commentBody)
+    res.send(comment)
+  } catch (error) {
+    throw error
+  }
+}
+
 //R
 const getCommentsAll = async (req, res) => {
   try {
@@ -32,8 +61,39 @@ const getCommentByFlashcardId = async (req, res) => {
   }
 }
 
+//U
+const updateComment = async (req, res) => {
+  try {
+    let commentId = parseInt(req.params.commentId)
+    let updatedComment = await Comment.update(req.body, {
+      where: { id: commentId },
+      returning: true
+    })
+    res.send(updatedComment)
+  } catch (error) {
+    throw error
+  }
+}
+
+//D
+const deleteComment = async (req, res) => {
+  try {
+    let commentId = parseInt(req.params.commentId)
+    await Comment.destroy({
+      where: { id: commentId }
+    })
+    res.send(`Successfully deleted comment id of ${commentId}.`)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
+  createCommentOnQuiz,
+  createCommentOnFlashcard,
   getCommentsAll,
   getCommentByQuizId,
-  getCommentByFlashcardId
+  getCommentByFlashcardId,
+  updateComment,
+  deleteComment
 }

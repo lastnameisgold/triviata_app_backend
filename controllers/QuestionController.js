@@ -1,7 +1,5 @@
 const { Question } = require('../models')
 
-//join quiz and question together ??
-
 //C
 const createQuestion = async (req, res) => {
   try {
@@ -56,9 +54,6 @@ const updateQuestion = async (req, res) => {
 const deleteQuestion = async (req, res) => {
   try {
     let questionId = parseInt(req.body.questionId)
-    if (isNaN(questionId)) {
-      throw new Error("Invalid question ID")
-    } //keeps throwing this error, resolve in morning
     await Question.destroy({
       where: { id: questionId }
     })

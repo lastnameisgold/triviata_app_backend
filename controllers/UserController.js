@@ -10,6 +10,18 @@ const getUsersAll = async (req, res) => {
   }
 }
 
+const getUserByEmail = async (req, res) => {
+  try {
+    let user = await User.findAll({
+      where: { email: req.params.email }
+    })
+    res.send(user)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
-  getUsersAll
+  getUsersAll,
+  getUserByEmail
 }

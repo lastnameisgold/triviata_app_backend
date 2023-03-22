@@ -3,7 +3,7 @@ const { Question } = require('../models')
 //C
 const createQuestion = async (req, res) => {
   try {
-    let ownerId = parseInt(req.params.user_id)
+    let ownerId = parseInt(req.params.userId)
     let questionContent = {
       ownerId,
       ...req.body

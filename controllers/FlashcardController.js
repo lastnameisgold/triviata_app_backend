@@ -3,7 +3,7 @@ const { Flashcard } = require('../models')
 //C
 const createFlashcard = async (req, res) => {
   try {
-    let ownerId = parseInt(req.params.user_id)
+    let ownerId = parseInt(req.params.userId)
     let flashcardContent = {
       ownerId,
       ...req.body

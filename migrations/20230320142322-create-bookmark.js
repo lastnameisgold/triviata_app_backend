@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       quizId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       flashcardId: {
         type: Sequelize.INTEGER

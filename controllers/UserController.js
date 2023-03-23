@@ -34,8 +34,21 @@ const updateUser = async (req, res) => {
   }
 }
 
+const deleteUser = async (req, res) => {
+  try {
+    let userEmail = (req.params.email)
+    await User.destroy({
+      where: { email: userEmail }
+    })
+    res.send(`Successfully deleted user profile for ${userEmail}. We hope see you again!`)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   getUsersAll,
   getUserByEmail,
-  updateUser
+  updateUser,
+  deleteUser
 }

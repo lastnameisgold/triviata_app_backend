@@ -5,7 +5,6 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.addColumn('bookmarks', 'questionId', {
       type: Sequelize.INTEGER,
-      allowNull: false,
       references: {
         model: 'questions',
         key: 'id'

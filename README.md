@@ -11,6 +11,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 - [GitHub] (https://github.com/nezcodin)
 - [LinkedIn] (https://www.linkedin.com/in/charlottefusco/)
 
+</details>
+
 #### Jose Reyes
 
 <details>
@@ -18,6 +20,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 
 - [GitHub] (https://github.com/juzorey)
 - [LinkedIn] (https://www.linkedin.com/in/jose-r-reyes/)
+
+</details>
 
 #### Austin Holland
 
@@ -27,6 +31,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 - [GitHub] (https://github.com/austinih)
 - [LinkedIn] (https://www.linkedin.com/in/austinih/)
 
+</details>
+
 #### Fernando Dorado
 
 <details>
@@ -34,6 +40,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 
 - [GitHub] (https://github.com/lastnameisgold)
 - [LinkedIn] (https://www.linkedin.com/in/fdorado/)
+
+</details>
 
 ## Key Features
 1. Create Quizzes and Flashcards

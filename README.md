@@ -8,8 +8,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 <details>
     <summary>Socials</summary>
 
-- [GitHub] (https://github.com/nezcodin)
-- [LinkedIn] (https://www.linkedin.com/in/charlottefusco/)
+- [GitHub](https://github.com/nezcodin)
+- [LinkedIn](https://www.linkedin.com/in/charlottefusco/)
 
 </details>
 
@@ -18,8 +18,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 <details>
     <summary>Socials</summary>
 
-- [GitHub] (https://github.com/juzorey)
-- [LinkedIn] (https://www.linkedin.com/in/jose-r-reyes/)
+- [GitHub](https://github.com/juzorey)
+- [LinkedIn](https://www.linkedin.com/in/jose-r-reyes/)
 
 </details>
 
@@ -28,8 +28,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 <details>
     <summary>Socials</summary>
 
-- [GitHub] (https://github.com/austinih)
-- [LinkedIn] (https://www.linkedin.com/in/austinih/)
+- [GitHub](https://github.com/austinih)
+- [LinkedIn](https://www.linkedin.com/in/austinih/)
 
 </details>
 
@@ -38,8 +38,8 @@ Triviata is a quiz and flashcard platform that allows users to create and utiliz
 <details>
     <summary>Socials</summary>
 
-- [GitHub] (https://github.com/lastnameisgold)
-- [LinkedIn] (https://www.linkedin.com/in/fdorado/)
+- [GitHub](https://github.com/lastnameisgold)
+- [LinkedIn](https://www.linkedin.com/in/fdorado/)
 
 </details>
 

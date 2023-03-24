@@ -64,7 +64,7 @@ The Users model will store all data realting to a user's profile. Users create a
 - user_id - PK
 - name - string
 - email - string
-- password - string
+- passwordDigest - string
 
 </details>
 

@@ -34,6 +34,19 @@ const updateUser = async (req, res) => {
   }
 }
 
+const updateUserById = async (req, res) => {
+  try {
+    let userId = (req.params.id)
+    let updatedUser = await User.update(req.body, {
+      where: { id: userId },
+      returning: true
+    })
+    res.send(updatedUser)
+  } catch (error) {
+    throw error
+  }
+}
+
 const deleteUser = async (req, res) => {
   try {
     let userEmail = (req.params.email)
@@ -46,9 +59,23 @@ const deleteUser = async (req, res) => {
   }
 }
 
+const deleteUserById = async (req, res) => {
+  try {
+    let userId = (req.params.id)
+    await User.destroy({
+      where: { id: userId }
+    })
+    res.send(`Successfully deleted user profile for ${userId}. We hope see you again!`)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   getUsersAll,
   getUserByEmail,
   updateUser,
-  deleteUser
+  updateUserById,
+  deleteUser,
+  deleteUserById
 }
